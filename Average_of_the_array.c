@@ -1,18 +1,15 @@
 #include<stdio.h>
 int main()
 {
-	int size,i,sum=0;
-	float avg;
-	scanf("%d",&size);
-	int a[size];
-	for(i=0;i<size;i++)
-	{
-		scanf("%d",&a[i]);
-	}
-	for(i=0;i<size;i++)
-	{
-		sum=sum+a[i];
-	}
-	avg=sum/(size*1.0);
-	printf("%.2f",avg);
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    float s=0.0;
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        s=s+a[i];
+    }
+    float abg=s/n;
+    printf("%.2f",abg);
 }
